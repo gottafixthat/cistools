@@ -24,14 +24,14 @@ INSTDIR = /usr/local
 
 SUBDIRS =	libdes
 
-SOURCES =	StrTools.cpp Cfg.cpp CCValidate.cpp
+SOURCES =	StrTools.cpp Cfg.cpp CCValidate.cpp FParse.cpp
 SOURCES +=	ADBColumn.cpp ADBRow.cpp ADB.cpp ADBTable.cpp ADBList.cpp
 ifdef ADBQT
     SOURCES += ADBLogin.cpp
 endif
 CSOURCES =	bdes.c
 
-HEADERS =	StrTools.h Cfg.h CCValidate.h ADB.h bdes.h
+HEADERS =	StrTools.h Cfg.h CCValidate.h ADB.h bdes.h FParse.h
 
 OBJECTS =	$(SOURCES:.cpp=.o)
 COBJECTS +=	$(CSOURCES:.c=.o)

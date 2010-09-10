@@ -102,7 +102,7 @@ rpms:
 	-mkdir /var/tmp/cistools/SPECS
 	-mkdir /var/tmp/cistools/SOURCES
 	-mkdir /var/tmp/cistools/cistools-$(FULLVERSION)
-	-tar --exclude CVS --exclude RPM -zcf /var/tmp/cistools/cistools-$(FULLVERSION).tgz Makefile *cpp *h
+	-tar --exclude .svn --exclude RPM -zcf /var/tmp/cistools/cistools-$(FULLVERSION).tgz Makefile *c *cpp *h libdes
 	-tar -C /var/tmp/cistools/cistools-$(FULLVERSION) -zxf /var/tmp/cistools/cistools-$(FULLVERSION).tgz
 	-tar -C /var/tmp/cistools -zcf /var/tmp/cistools/SOURCES/cistools-$(FULLVERSION).tgz cistools-$(FULLVERSION)
 	-cat rpm/cistools.spec | sed -e s/{VERSION}/$(FULLVERSION)/ -e s/{RELEASE}/$(RELEASE)/ > /var/tmp/cistools/SPECS/cistools-$(FULLVERSION).spec

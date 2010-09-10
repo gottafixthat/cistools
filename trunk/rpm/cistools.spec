@@ -1,7 +1,8 @@
+Name: cistools
 Summary: Cheetah IS Development Tools Name: cistools
 Version: {VERSION}
 Release: {RELEASE}
-Copyright: 1998-2010, R. Marc Lewis, All Rights Reserved
+License: 1998-2010, R. Marc Lewis, All Rights Reserved
 Group: Development/Libraries
 Source: cistools-{VERSION}.tgz
 Buildroot: /var/tmp/cistools
